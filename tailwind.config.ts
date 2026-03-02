@@ -1,18 +1,18 @@
-/**
- * TailwindCSS design tokens
- */
-/** @type {import('tailwindcss').Config} */
-module.exports = {
+import type { Config } from 'tailwindcss'
+
+const config: Config = {
+  content: [
+    './pages/**/*.{js,ts,jsx,tsx,mdx}',
+    './components/**/*.{js,ts,jsx,tsx,mdx}',
+    './app/**/*.{js,ts,jsx,tsx,mdx}',
+  ],
   theme: {
     extend: {
       colors: {
-        primary: '#FBBF24', // amber-400
-        secondary: '#3B82F6', // blue-500
-      },
-      spacing: {
-        '18': '4.5rem', // 72px
+        'kedah-green': '#00ff66',
       },
     },
   },
   plugins: [],
-};
+}
+export default config
